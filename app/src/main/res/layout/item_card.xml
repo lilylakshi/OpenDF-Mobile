@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+        <score.gsoc.opendf.widgets.CustomLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardTitle"
+            android:text="@string/sample_card_header"
+            android:padding="@dimen/small_padding"
+            android:background="@color/dark_gary"
+            android:textColor="@android:color/white" />
+        <score.gsoc.opendf.widgets.CustomLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardBody"
+            android:text="@string/sample_card_body"
+            android:padding="@dimen/small_padding"
+            android:textColor="#555555" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+
+        <score.gsoc.opendf.widgets.CustomLightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardFooter"
+            android:text="@string/sample_card_footer"
+            android:paddingTop="@dimen/extra_small_padding"
+            android:paddingRight="@dimen/extra_small_padding"
+            android:paddingEnd="@dimen/extra_small_padding"
+            android:paddingBottom="@dimen/extra_small_padding"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingStart="@dimen/small_padding" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

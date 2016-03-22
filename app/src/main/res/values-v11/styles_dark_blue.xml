@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AutoCompleteTextViewdark_blue" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/dark_blue_list_selector_holo_light</item>
+	    <item name="android:background">@drawable/dark_blue_edit_text_holo_light</item>
+  </style>
+
+  <style name="Buttondark_blue" parent="android:Widget.Holo.Light.Button">
+	  <item name="android:background">@drawable/dark_blue_btn_default_holo_light</item>
+  </style>
+
+  <style name="ImageButtondark_blue" parent="android:Widget.Holo.Light.ImageButton">
+	  <item name="android:background">@drawable/dark_blue_btn_default_holo_light</item>
+  </style>
+
+  <style name="Spinnerdark_blue" parent="android:Widget.Holo.Light.Spinner">
+      <item name="android:background">@drawable/dark_blue_spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/dark_blue_list_selector_holo_light</item>
+  </style>
+
+  <style name="ProgressBardark_blue" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/dark_blue_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/dark_blue_progress_indeterminate_horizontal_holo_light</item>
+  </style>
+
+  <style name="SeekBardark_blue" parent="android:Widget.Holo.Light.SeekBar">
+      <item name="android:progressDrawable">@drawable/dark_blue_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/dark_blue_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:thumb">@drawable/dark_blue_scrubber_control_selector_holo_light</item>
+  </style>
+
+  <style name="RatingBardark_blue" parent="android:Widget.Holo.Light.RatingBar">
+      <item name="android:progressDrawable">@drawable/dark_blue_ratingbar_full_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/dark_blue_ratingbar_full_holo_light</item>
+  </style>
+
+  <style name="RatingBarBigdark_blue" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+      <item name="android:progressDrawable">@drawable/dark_blue_ratingbar_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/dark_blue_ratingbar_holo_light</item>
+  </style>
+
+  <style name="RatingBarSmalldark_blue" parent="android:Widget.Holo.Light.RatingBar.Small">
+      <item name="android:progressDrawable">@drawable/dark_blue_ratingbar_small_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/dark_blue_ratingbar_small_holo_light</item>
+  </style>
+
+  <style name="Toggledark_blue" parent="android:Widget.Holo.Light.Button.Toggle">
+      <item name="android:background">@drawable/dark_blue_btn_toggle_holo_light</item>
+  </style>
+
+</resources>

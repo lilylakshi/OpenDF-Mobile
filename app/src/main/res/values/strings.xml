@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">OpenDF</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="navList">
+        <item>Home</item>
+        <item>Investigators</item>
+        <item>Logs</item>
+        <item>Settings</item>
+        <item>Notifications</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sample_card_header">One Ring to Rule Them All</string>
+    <string name="sample_card_body">This investigation is carried out to find the lost ring and destroy it once and for all.</string>
+    <string name="sample_card_footer">14/02/2016</string>
+
+    <string name="sample_card_header2">Murder Weapon in Solaria</string>
+    <string name="sample_card_body2">This investigation is lead by Elijah Baley to find the murder weapon of Rikaine Delmarre Investigation.</string>
+    <string name="sample_card_footer2">14/02/2300</string>
+</resources>

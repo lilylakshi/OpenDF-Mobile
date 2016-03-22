@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="dark_blue" parent="@style/_dark_blue">
+      <item name="android:textColorPrimary">@color/dark_blue_color</item>
+  </style>
+
+
+  <style name="_dark_blue" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <item name="android:editTextStyle">@style/EditTextdark_blue</item>
+
+    <item name="android:textColorHighlight">#9919195d</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewdark_blue</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxdark_blue</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtondark_blue</item>
+
+    <item name="android:buttonStyle">@style/Buttondark_blue</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtondark_blue</item>
+
+    <item name="android:spinnerStyle">@style/Spinnerdark_blue</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemdark_blue</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBardark_blue</item>
+
+    <item name="android:seekBarStyle">@style/SeekBardark_blue</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBardark_blue</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigdark_blue</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmalldark_blue</item>
+
+    <item name="android:buttonStyleToggle">@style/Toggledark_blue</item>
+
+    <item name="android:listViewStyle">@style/ListViewdark_blue</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewdark_blue.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemdark_blue</item>
+
+  </style>
+
+</resources>

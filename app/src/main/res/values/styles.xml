@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/dark_blue">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/dark_blue_color</item>
+        <item name="colorPrimaryDark">@color/dark_blue_color</item>
+        <item name="colorPrimary">@color/dark_blue_color</item>
+    </style>
+
+    <style name="ActionBarWhiteHamburger" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+</resources>
