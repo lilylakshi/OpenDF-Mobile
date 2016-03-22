@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setupNavDrawer() {
 
-        Typeface customFont = Typeface.createFromAsset(getAssets(), "fonts/SourceSansPro-Regular.ttf");
+        Typeface customFont = Typeface.createFromAsset(getAssets(), "fonts/SourceSansPro-Semibold.ttf");
 
         mDrawerItemsList = new ArrayList<>();
 
@@ -58,14 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
         for(String navItem : mNavItemsList) {
             mDrawerItemsList.add(new PrimaryDrawerItem().withName(navItem).withTypeface(customFont)
-                    .withTextColor(getResources().getColor(R.color.dark_blue_color)));
+                    .withTextColor(getResources().getColor(R.color.colorPrimaryDark)));
         }
 
         AccountHeader header = new AccountHeaderBuilder()
                 .withActivity(this)
                 .addProfiles(new ProfileDrawerItem()
                         .withName("Lilan Abeywickrama"))
-                .withTextColor(getResources().getColor(R.color.dark_blue_color))
+                .withTextColor(getResources().getColor(R.color.colorPrimaryDark))
                 .build();
 
         mDrawer = new DrawerBuilder()

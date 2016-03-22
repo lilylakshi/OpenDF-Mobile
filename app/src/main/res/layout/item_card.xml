@@ -11,21 +11,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="0dp">
+
         <score.gsoc.opendf.widgets.CustomLightTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/cardTitle"
             android:text="@string/sample_card_header"
             android:padding="@dimen/small_padding"
-            android:background="@color/dark_gary"
-            android:textColor="@android:color/white" />
+            android:background="@color/light_gray" />
+
         <score.gsoc.opendf.widgets.CustomLightTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/cardBody"
-            android:text="@string/sample_card_body"
-            android:padding="@dimen/small_padding"
-            android:textColor="#555555" />
+            android:padding="@dimen/small_padding" />
         
         <View
             android:layout_width="match_parent"

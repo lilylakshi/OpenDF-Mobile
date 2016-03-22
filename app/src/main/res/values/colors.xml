@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#19195d</color>
-    <color name="colorPrimaryDark">#19195d</color>
-    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorSecondary">#81C784</color>
+    <color name="colorAccent">#E65100</color>
     <color name="dark_blue_color">#19195d</color>
     <color name="light_gray">#cccccc</color>
     <color name="dark_gary">#7e7e7e</color>
+    <color name="green_color">#4caf50</color>
 
-    <color name="material_drawer_selected">@color/dark_blue_color</color>
+    <color name="material_drawer_selected">@color/colorPrimaryDark</color>
     <color name="material_drawer_selected_text">@android:color/white</color>
 </resources>
