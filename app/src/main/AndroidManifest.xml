@@ -17,7 +17,11 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".activities.UtilitiesActivity"
+            android:label="@string/title_utilities"
+            android:parentActivityName=".activities.MainActivity" />
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package score.gsoc.opendf.activities;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -89,7 +90,8 @@ public class MainActivity extends AppCompatActivity {
                                 return false;
 
                             default:
-                                Toast.makeText(MainActivity.this, "Not implemented yet.", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(MainActivity.this, "Not implemented yet.", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(MainActivity.this, UtilitiesActivity.class));
                                 break;
                         }
                         return true;

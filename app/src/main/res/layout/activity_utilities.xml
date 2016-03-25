@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        tools:context="score.gsoc.opendf.activities.UtilitiesActivity">
+
+        <FrameLayout
+            android:id="@+id/button11"
+            android:padding="24dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="33.3%">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_location" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/button12"
+            android:layout_toRightOf="@id/button11"
+            android:padding="24dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="33.3%">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_flash" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/button13"
+            android:layout_toRightOf="@id/button12"
+            android:padding="24dp"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="33.3%">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_camera" />
+        </FrameLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>
