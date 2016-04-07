@@ -37,4 +37,5 @@
     <string name="sample_card_header2">Murder Weapon in Solaria</string>
     <string name="sample_card_body2">This investigation is lead by Elijah Baley to find the murder weapon of Rikaine Delmarre Investigation.</string>
     <string name="sample_card_footer2">14/02/2300</string>
+    <string name="title_activity_investigation">Investigation Details</string>
 </resources>

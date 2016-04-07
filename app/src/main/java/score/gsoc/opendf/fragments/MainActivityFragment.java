@@ -1,16 +1,19 @@
 package score.gsoc.opendf.fragments;
 
-import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import score.gsoc.opendf.R;
+import score.gsoc.opendf.activities.InvestigationActivity;
 import score.gsoc.opendf.adapter.InvestigationAdapter;
 import score.gsoc.opendf.models.Investigation;
 
@@ -35,7 +38,7 @@ public class MainActivityFragment extends Fragment {
     }
 
     public void loadData() {
-        List<Investigation> investigationList = new ArrayList<>();
+        final List<Investigation> investigationList = new ArrayList<>();
 
         Investigation i1 = new Investigation();
         i1.setTitle(getResources().getString(R.string.sample_card_header));
@@ -52,5 +55,13 @@ public class MainActivityFragment extends Fragment {
         InvestigationAdapter investigationAdapter = new InvestigationAdapter(getActivity(), R.layout.item_card, investigationList);
         ListView listView = (ListView) getActivity().findViewById(R.id.investigationListView);
         listView.setAdapter(investigationAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(getContext(), InvestigationActivity.class);
+                i.putExtra("InvestigationExtra", investigationList.get(position));
+                startActivity(i);
+            }
+        });
     }
 }

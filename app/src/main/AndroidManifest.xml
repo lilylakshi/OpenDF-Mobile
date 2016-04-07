@@ -22,6 +22,14 @@
             android:name=".activities.UtilitiesActivity"
             android:label="@string/title_utilities"
             android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.InvestigationActivity"
+            android:label="@string/title_activity_investigation"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="score.gsoc.opendf.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
