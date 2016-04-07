@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Toast;
 
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.AccountHeaderBuilder;
@@ -25,12 +24,14 @@ import java.util.List;
 import score.gsoc.opendf.R;
 import score.gsoc.opendf.fragments.InvestigatorsFragment;
 import score.gsoc.opendf.fragments.MainActivityFragment;
+import score.gsoc.opendf.helpers.ActionbarHelper;
 
 public class MainActivity extends AppCompatActivity {
 
     Drawer mDrawer;
     List<IDrawerItem> mDrawerItemsList;
     String[] mNavItemsList;
+    ActionbarHelper mActionbarHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         setupActionBar();
         setupNavDrawer();
 
-        changeTitle(mNavItemsList[0]);
+        mActionbarHelper = new ActionbarHelper(this);
+        mActionbarHelper.changeTitle(mNavItemsList[0]);
         changeFragment(new MainActivityFragment());
     }
 
@@ -80,12 +82,12 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         switch (position) {
                             case 1:
-                                changeTitle(mNavItemsList[position - 1]);
+                                mActionbarHelper.changeTitle(mNavItemsList[position - 1]);
                                 changeFragment(new MainActivityFragment());
                                 return false;
 
                             case 2:
-                                changeTitle(mNavItemsList[position - 1]);
+                                mActionbarHelper.changeTitle(mNavItemsList[position - 1]);
                                 changeFragment(new InvestigatorsFragment());
                                 return false;
 
@@ -98,12 +100,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .build();
-    }
-
-    public void changeTitle(String title) {
-        if(getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(title);
-        }
     }
 
     public void changeFragment(Fragment fragment) {

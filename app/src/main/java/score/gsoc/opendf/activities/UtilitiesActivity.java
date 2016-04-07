@@ -5,23 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import score.gsoc.opendf.R;
+import score.gsoc.opendf.helpers.ActionbarHelper;
 
 public class UtilitiesActivity extends AppCompatActivity {
+
+    ActionbarHelper mActionbarHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_utilities);
 
-        setupActionBar();
-
-        if(getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-    }
-
-    public void setupActionBar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        mActionbarHelper = new ActionbarHelper(this);
+        mActionbarHelper.setupActionBar();
+        mActionbarHelper.enableBackButton();
     }
 }
